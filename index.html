@@ -27,7 +27,7 @@
                 <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo</p>
             </div>
             <section class="main-tables-container">
-                <div class="main-currency-table">
+                <div class="main-currency-table table-slider table-slider--show" data-id="1">
                     <p class="currency-table--title">Monedas</p>
                     <div class="currency-table--container">
                         <table>
@@ -48,12 +48,15 @@
                                 <td class="table__bottom-right table__right">$ 4.96 <span class="down"></span></td>
                             </tr>
                         </table>
+                        <a href="#table2" class="table-go-right" id="next">
+                            <img src="./assets/icons/right-arrow.svg" alt="flecha derecha">
+                        </a>
                     </div>
                     <div class="currency-table--date">
                         <p><b>Actualizado:</b> 19 de Julio 23:45</p>
                     </div>
                 </div>
-                <div class="main-commissions-table">
+                <div class="main-commissions-table table-slider" data-id="2">
                     <p class="commissions-table--title">Comisiones</p>
                     <div class="commissions-table--container">
                         <table>
@@ -74,6 +77,9 @@
                                 <td class="table__bottom-right table__right">$14.96</td>
                             </tr>
                         </table>
+                        <a href="#table1" class="table-go-left" id="before">
+                            <img src="./assets/icons/left-arrow.svg" alt="flecha izquierda">
+                        </a>
                     </div>
                     <div class="commissions-table--date">
                         <p><b>Actualizado:</b> 19 Julio 23:48</p>
@@ -86,6 +92,7 @@
         <section></section>
         <section></section>
     </main>
-    <footer></footer>    
+    <footer></footer>   
+    <script src="./js/slider.js"></script>
 </body>
 </html>
